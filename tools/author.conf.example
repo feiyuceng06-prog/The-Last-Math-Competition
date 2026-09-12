@@ -1,0 +1,4 @@
+# 复制成 tools/author.conf 后填自己的信息。
+# 规则 4 要求统计表里记录解决者姓名和 affiliation，所以这两项必须真填。
+AUTHOR_NAME="Your Name"
+AUTHOR_AFFILIATION="Your Institution"

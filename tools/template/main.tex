@@ -1,0 +1,70 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[hidelinks]{hyperref}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\conjid}{@@ID@@}
+
+\title{@@TITLE@@\\[0.4em]\large The Last Math Competition, Conjecture \conjid}
+\author{@@AUTHOR@@\\ \small @@AFFILIATION@@}
+\date{@@DATE@@}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+@@ABSTRACT@@
+\end{abstract}
+
+\section{The conjecture as stated}
+
+The original text of conjecture \conjid{} reads:
+
+\begin{quote}
+@@STATEMENT@@
+\end{quote}
+
+\section{Reading of the statement}
+
+% If the statement is ambiguous, under-specified, or contains an error, say so
+% HERE and fix a precise reading. State explicitly which reading is being
+% settled and why it is the faithful one. Do not silently repair the statement.
+
+@@READING@@
+
+\section{Result}
+
+% State exactly what is established: proved, disproved, or partially resolved.
+
+@@RESULT@@
+
+\section{Proof}
+
+@@PROOF@@
+
+\section{Formalization}
+
+The argument is formalized in Lean 4 against Mathlib in the accompanying
+\texttt{lean/} directory; see \texttt{lean/Submission/Basic.lean}. The
+formalization is free of \texttt{sorry} and introduces no new axioms beyond
+those of Mathlib.
+
+\section{Remarks}
+
+% Optional: what the truth is likely to be, what stays open, why the original
+% statement went wrong, what a repaired conjecture should say.
+
+@@REMARKS@@
+
+\end{document}
